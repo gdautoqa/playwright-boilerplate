@@ -15,24 +15,27 @@ This is a boilerplate setup for end-to-end UI testing using Playwright. It inclu
 
 ## Project Structure
 
+```plaintext
 src/
-pages/
-example.page.ts
-tests/
-example.test.ts
-accessibility.test.ts
-utils/
-accessibility.ts
-features/
-example.feature
-steps/
-example.steps.ts
+  pages/
+    example.page.ts
+  tests/
+    example.test.ts
+    accessibility.test.ts
+  utils/
+    accessibility.ts
+  features/
+    example.feature
+  steps/
+    example.steps.ts
 playwright.config.ts
 tsconfig.json
 cucumber.js
 package.json
 .gitignore
 README.md
+LICENSE.md
+```
 
 ## Setup
 
