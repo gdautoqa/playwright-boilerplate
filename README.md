@@ -86,7 +86,3 @@ If you need to adjust the mobile device names or add new projects, update the co
 - **TypeScript:** Configured in `tsconfig.json` for strict type-checking.
 - **Prettier:** Configured in `.prettierrc` for consistency.
 - **Playwright:** Multi-project testing configuration is provided in `playwright.config.ts`, which includes UI and API testing along with browser/device profiles.
-
-## License
-
-This project is licensed under the MIT License. See [LICENSE.md](./LICENSE.md) for more details.
