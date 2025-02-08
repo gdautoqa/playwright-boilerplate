@@ -1,6 +1,6 @@
 import { Given, Then } from '@cucumber/cucumber';
 import { expect } from '@playwright/test';
-import { ExamplePage } from '../pages/Example.page';
+import { ExamplePage } from '../pages/examplePage';
 
 Given('I navigate to the example page', async function () {
   const page = this.page;
