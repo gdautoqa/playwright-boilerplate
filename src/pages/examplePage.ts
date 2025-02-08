@@ -1,13 +1,10 @@
 import { Page } from '@playwright/test';
 
 export class ExamplePage {
-  readonly page: Page;
-  constructor(page: Page) {
-    this.page = page;
-  }
+  constructor(private page: Page) {}
 
   async navigate() {
-    await this.page.goto('http://www.example.com');
+    await this.page.goto('/example');
   }
 
   async getTitle() {
