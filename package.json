@@ -1,9 +1,10 @@
 {
   "name": "playwright-boilerplate",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "main": "index.js",
   "scripts": {
     "test": "playwright test",
+    "bdd": "cucumber-js",
     "lint": "eslint 'src/**/*{ts,tsx}' src",
     "lint:fix": "eslint 'src/**/*{ts,tsx}' --fix src",
     "format": "prettier --write .",
@@ -18,23 +19,23 @@
   "license": "MIT",
   "description": "Playwright boilerplate for automation testing",
   "dependencies": {
-    "@cucumber/cucumber": "^11.2.0",
     "axe-core": "^4.10.2",
-    "playwright": "^1.50.1",
-    "prettier": "^3.4.2",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.7.3",
+    "axios": "^1.7.9",
     "dotenv": "^16.4.7",
-    "axios": "^1.7.9"
+    "playwright": "^1.50.1"
   },
   "devDependencies": {
+    "@cucumber/cucumber": "^11.2.0",
     "@playwright/test": "^1.50.1",
     "@types/node": "^22.13.0",
-    "eslint": "^9.19.0",
     "@typescript-eslint/eslint-plugin": "^8.22.0",
     "@typescript-eslint/parser": "^8.22.0",
+    "eslint": "^9.19.0",
     "eslint-config-prettier": "^10.0.1",
     "eslint-plugin-playwright": "^2.2.0",
-    "eslint-plugin-prettier": "^5.2.3"
+    "eslint-plugin-prettier": "^5.2.3",
+    "prettier": "^3.4.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
   }
 }
