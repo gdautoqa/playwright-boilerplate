@@ -7,9 +7,11 @@ export default defineConfig({
     timeout: 5000,
   },
   fullyParallel: true,
-  retries: 2,
+  retries: process.env.CI ? 2 : 0,
+  workers: process.env.CI ? 1 : undefined,
   reporter: [['html', { open: 'never' }], ['list']],
   use: {
+    baseURL: process.env.BASE_URL || 'http://localhost:3000',
     trace: 'on',
     video: 'retain-on-failure',
     screenshot: 'on',
