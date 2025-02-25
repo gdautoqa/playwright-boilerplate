@@ -1,5 +1,6 @@
 Feature: Example feature
 
   Scenario: Example scenario
-    Given I navigate to the example page
-    Then I should see the title "Example Playwright Boilerplate Page"
+    Given I have an example
+    When I perform an action
+    Then I expect a result

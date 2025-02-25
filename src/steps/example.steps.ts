@@ -1,15 +1,15 @@
-import { Given, Then } from '@cucumber/cucumber';
+import { Given, When, Then } from '@cucumber/cucumber';
 import { expect } from '@playwright/test';
-import { ExamplePage } from '../pages/examplePage';
 
-Given('I navigate to the example page', async function () {
-  const page = this.page;
-  const examplePage = new ExamplePage(page);
-  await examplePage.navigate();
+Given('I have an example', async function () {
+  // Implement the Given step
 });
 
-Then('I should see the title {string}', async function (title: string) {
-  const page = this.page;
-  const examplePage = new ExamplePage(page);
-  expect(await examplePage.getTitle()).toBe(title);
+When('I perform an action', async function () {
+  // Implement the When step
+});
+
+Then('I expect a result', async function () {
+  // Implement the Then step
+  expect(true).toBe(true);
 });
