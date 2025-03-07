@@ -6,6 +6,7 @@ export default defineConfig({
   expect: {
     timeout: 5000,
   },
+  captureGitInfo: { diff: true},
   fullyParallel: true,
   retries: process.env.CI ? 2 : 0,
   workers: process.env.CI ? 1 : undefined,
